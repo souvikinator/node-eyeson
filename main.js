@@ -8,13 +8,10 @@ const spawnSync=require('child_process').spawnSync;
 var termparse=new Termparse.init();
 
 const banner=()=>{
-let B1='░█▀▀▀ ░█──░█ ░█▀▀▀ ░█▀▀▀█ ░█▀▀▀█ ░█▄─░█';
-let B2='░█▀▀▀ ░█▄▄▄█ ░█▀▀▀ ─▀▀▀▄▄ ░█──░█ ░█░█░█';
-let B3='░█▄▄▄ ──░█── ░█▄▄▄ ░█▄▄▄█ ░█▄▄▄█ ░█──▀█';
-    console.log(chalk.hex('#ff0066')(B1));
-    console.log(chalk.hex('#ff3399')(B2));
-    console.log(chalk.hex('#ff33cc')(B3));
-    console.log('\n');
+let B1='█▀▀ █▄█ █▀▀ █▀ █▀█ █▄░█';
+let B2='██▄ ░█░ ██▄ ▄█ █▄█ █░▀█';
+    console.log(chalk.hex('#00ff00')(B1));
+    console.log(chalk.hex('#ffff00')(B2));
 }
 
 //args is list of files(not flags/options)
