@@ -16,15 +16,23 @@
 
 The repo already includes the bianary of **eyeson** in the **binaries folder**
 
-- eyeson-linux (for linux)
-- eyeson-macos (for macos)
-- eyeson-win.exe (for windows)
+- linux/eyeson (for linux)
+- macos/eyeson (for macos)
+- win/eyeson.exe (for windows)
 
 after downloading the suitable binary file, set the path variable for the binary like so:
 
 **For macOs and Linux**
 ```bash
 PATH="/path/to the downloaded/binary/file:$PATH"
+```
+
+or 
+
+if your have node js installed then use:
+
+```bash
+npm install -g eyeson
 ```
 
 # 💻Usage
