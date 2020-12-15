@@ -1,10 +1,10 @@
 {
-  "name": "eyes-on",
-  "version": "1.0.0",
+  "name": "@darthcucumber/eyes-on",
+  "version": "1.0.2",
   "description": "minimal cross-platform file watcher",
   "main": "eyes-on.js",
   "bin": {
-    "eyeson": "eyes-on.js"
+    "eyeson": "./eyes-on.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

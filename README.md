@@ -19,11 +19,7 @@
 
 # 🔧Installation
 
-The repo already includes the bianary of **eyeson** in the **binaries folder**
-
-- linux/eyeson (for linux)
-- macos/eyeson (for macos)
-- win/eyeson.exe (for windows)
+Download suitable Eyeson execuatble from [here](https://github.com/DarthCucumber/node-eyeson/releases/tag/v1.0.0)
 
 after downloading the suitable binary file, set the path variable for the binary like so:
 
@@ -37,7 +33,7 @@ or
 if your have node js installed then use:
 
 ```bash
-npm install -g eyes-on
+npm install -g @darthcucumber/eyes-on
 ```
 
 # 💻Usage
@@ -51,14 +47,14 @@ npm install -g eyes-on
 - **Watching over single file**
 
 ```bash
-eyes-on watch file1.txt
+eyeson watch file1.txt
 ```
 watches over `file1.txt`
 
 - **Watching over multiple files**
 
 ```bash
-eyes-on watch file1.txt file2.txt file3.txt
+eyeson watch file1.txt file2.txt file3.txt
 ```
 watches over the file name provided as agrs.
 **note:** if any of the file provided as agrs does not exists then it stops watching and exits.
@@ -66,7 +62,7 @@ watches over the file name provided as agrs.
 - **Watching over all the files in current directory**
 
 ```bash
-eyes-on watch *
+eyeson watch *
 ```
 gives following result:
 ![enter image description here](https://i.ibb.co/DfBnJsp/h-Hr-Cx-Vav-Jc.gif)
@@ -74,7 +70,7 @@ gives following result:
 - **Watching over specific files in current directory**
 
 ```bash
-eyes-on watch *.js
+eyeson watch *.js
 ```
 only  watches  for all `js` files in the directory
 gives following result:
@@ -83,14 +79,14 @@ gives following result:
 - **Changing watch interval time**
 
 ```bash
-eyes-on watch *.js -t=1000
+eyeson watch *.js -t=1000
 ```
 this changes the interval to 1000ms (1s) i.e the interval at which **eyeson** checks for file modification. Takes input in milliseconds. Default is 2s or 2000ms.
 
 - **Passing single line commands**
 
 ```bash
-eyes-on watch test.py -c="python3 test.py"
+eyeson watch test.py -c="python3 test.py"
 ```
 this executes `python3 test.py` (runs the python file test.py) command on any modification in the files its watching over.
 gives following result:
@@ -100,7 +96,7 @@ gives following result:
 - **Passing multiple line commands**
 
 ```bash
-eyes-on watch test.cpp -c="g++ -o test test.cpp
+eyeson watch test.cpp -c="g++ -o test test.cpp
 ./test"
 ```
 this executes `g++ -o test test.cpp` (compiles test.cpp)  first and then executes `./test` (runs the cpp program) on any modification in the files its watching over. This feature comes in very handy.
