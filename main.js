@@ -2,16 +2,21 @@
 
 const fs=require('fs');
 const chalk=require('chalk'); 
-const Termparse=require('./termparse');
+const Termparse=require('termparse');
 const spawnSync=require('child_process').spawnSync;
 
 var termparse=new Termparse.init();
 
 const banner=()=>{
-let B1='█▀▀ █▄█ █▀▀ █▀ █▀█ █▄░█';
-let B2='██▄ ░█░ ██▄ ▄█ █▄█ █░▀█';
-    console.log(chalk.hex('#00ff00')(B1));
-    console.log(chalk.hex('#ffff00')(B2));
+let B=`
+ o--o o   o o--o  o-o   o-o  o   o
+ |     \\ /  |    |     o   o |\\  |
+ O-o    O   O-o   o-o  |   | | \\ |
+ |      |   |        | o   o |  \\|
+ o--o   o   o--o o--o   o-o  o   o
+`
+console.log(chalk.greenBright(B));
+
 }
 
 //args is list of files(not flags/options)

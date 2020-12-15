@@ -3,13 +3,28 @@
   "version": "1.0.0",
   "description": "minimal cross-platform file watcher",
   "main": "main.js",
-  "bin":"main.js",
+  "bin": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Souvik Kar Mahapatra",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarthCucumber/node-eyeson.git"
+  },
+  "keywords": [
+      "cli",
+      "command line utility",
+      "file watcher",
+      "command line tool"
+  ],
+  "author": "Souvik Kar Mahapatra <souvikat001@gmail.com> (https://github.com/DarthCucumber)",
+  "license": "MIT",
+  "bugs":{
+    "url":"https://github.com/DarthCucumber/node-eyeson/issues"
+  },
+  "homepage": "https://github.com/DarthCucumber/node-eyeson#readme",
   "dependencies": {
-    "chalk": "^4.1.0"
+    "chalk": "^4.1.0",
+    "termparse": "^1.0.0"
   }
 }
