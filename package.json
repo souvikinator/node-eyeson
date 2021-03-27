@@ -1,6 +1,6 @@
 {
   "name": "@darthcucumber/eyes-on",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "minimal cross-platform file watcher",
   "main": "eyes-on.js",
   "bin": {
@@ -27,7 +27,6 @@
   "homepage": "https://github.com/DarthCucumber/node-eyeson#readme",
   "dependencies": {
     "chalk": "^4.1.0",
-    "termparse": "^1.0.0"
-  },
-  "devDependencies": {}
+    "termparse": "^2.0.2"
+  }
 }
